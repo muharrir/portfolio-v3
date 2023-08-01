@@ -7,16 +7,16 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 import { motion } from "framer-motion";
 
 function Contact() {
-  const { ref, inView } = useInView({
-    threshold: 0.5,
-  });
-  const { setActiveSection } = useActiveSectionContext();
+  // const { ref, inView } = useInView({
+  //   threshold: 0.5,
+  // });
+  // const { setActiveSection } = useActiveSectionContext();
 
-  useEffect(() => {
-    if (inView) {
-      setActiveSection("Contact");
-    }
-  }, [inView, setActiveSection]);
+  // useEffect(() => {
+  //   if (inView) {
+  //     setActiveSection("Contact");
+  //   }
+  // }, [inView, setActiveSection]);
 
   const contentAnimation = {
     initial: { opacity: 0, x: -50 },
@@ -31,7 +31,7 @@ function Contact() {
     <section
       className="pt-[100px] lg:h-[calc(100vh-100px)] -scroll-mt-28 lg:-scroll-mt-3"
       id="contact"
-      ref={ref}
+      // ref={ref}
     >
       <motion.div
         className="px-6 lg:px-[200px] py-[50px] flex flex-col items-start lg:items-center lg:justify-center"
@@ -51,11 +51,15 @@ function Contact() {
 
         {/* Button */}
         <div className="relative pt-[50px]">
-          <Link href={"mailto:muharrir97@gmail.com"}>
-            <button className="w-[200px] h-[50px] bg-[#FFCE38] rounded-lg flex justify-center items-center absolute bottom-1 right-1 border-2 border-black hover:right-2 hover:bottom-2 transition-all">
-              <h2 className="font-semibold text-black text-lg">Say Hello</h2>
-            </button>
-          </Link>
+          <button className="w-[200px] h-[50px] bg-[#FFCE38] rounded-lg flex justify-center items-center absolute bottom-1 right-1 border-2 border-black hover:right-2 hover:bottom-2 transition-all">
+            <a
+              href={"mailto:muharrir97@gmail.com"}
+              className="font-semibold text-black text-lg  w-full h-full flex items-center justify-center"
+            >
+              Say Hello
+            </a>
+          </button>
+
           <div className="w-[200px] h-[50px] bg-black rounded-lg -z-10"></div>
         </div>
       </motion.div>
@@ -117,7 +121,7 @@ function Contact() {
             </div>
           </Link>
 
-          <Link href={"mailto:muharrir97@gmail.com"}>
+          <a href={"mailto:muharrir97@gmail.com"}>
             <div className="flex items-center gap-x-3 lg:gap-x-5">
               <div className="bg-black w-11 h-11 lg:w-14 lg:h-14 rounded-full flex items-center justify-center hover:bg-black/50 cursor-pointer">
                 <Image
@@ -131,7 +135,7 @@ function Contact() {
                 muharrir97@gmail.com
               </h3>
             </div>
-          </Link>
+          </a>
         </div>
       </div>
     </section>
