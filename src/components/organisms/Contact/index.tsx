@@ -7,16 +7,16 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 import { motion } from "framer-motion";
 
 function Contact() {
-  // const { ref, inView } = useInView({
-  //   threshold: 0.5,
-  // });
-  // const { setActiveSection } = useActiveSectionContext();
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
+  const { setActiveSection } = useActiveSectionContext();
 
-  // useEffect(() => {
-  //   if (inView) {
-  //     setActiveSection("Contact");
-  //   }
-  // }, [inView, setActiveSection]);
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("Contact");
+    }
+  }, [inView, setActiveSection]);
 
   const contentAnimation = {
     initial: { opacity: 0, x: -50 },
@@ -31,7 +31,7 @@ function Contact() {
     <section
       className="pt-[100px] lg:h-[calc(100vh-100px)] -scroll-mt-28 lg:-scroll-mt-3"
       id="contact"
-      // ref={ref}
+      ref={ref}
     >
       <motion.div
         className="px-6 lg:px-[200px] py-[50px] flex flex-col items-start lg:items-center lg:justify-center"
