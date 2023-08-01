@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "category": "mobile",
+    "title": "Bank Sha",
+    "description": "Build a mobile bank apps that user can top up money, send money to friends, and buy package provider. This project ist still on going",
+    "tech": ["Flutter", "Laravel"],
+    "github": "https://github.com/muharrir/bank_sha"
+  },
+  {
+    "id": 2,
+    "category": "mobile",
+    "title": "Shamo",
+    "description": "This is an ecommerce app that sell the branded shoes. It has a features that user can chat to seller. This project ist still on going",
+    "tech": ["Flutter", "Laravel"],
+    "github": "https://github.com/muharrir/shamo"
+  },
+  {
+    "id": 3,
+    "category": "website",
+    "title": "Portfolio-v2",
+    "description": "My Iteration for Personal Website this is a v2 of my Portfolio. I built like an macOS feels, If you're curious let's checkout",
+    "tech": ["Tailwindcss", "Nexjs"],
+    "github": "https://github.com/muharrir/portfolio-v2",
+    "href": "https://portfolio-v2-muharrir.vercel.app/"
+  },
+  {
+    "id": 4,
+    "category": "mobile",
+    "title": "Cozy",
+    "description": "This apps are built for finding a best house in town. Using firebase to call an API. ",
+    "tech": ["Flutter", "Firebase"],
+    "github": "https://github.com/muharrir/cozy"
+  },
+
+  {
+    "id": 5,
+    "category": "website",
+    "title": "Semina",
+    "description": "This website are built for selling a ticket event. It's still on progress",
+    "tech": ["Tailwindcss", "Nexjs", "Expressjs", "MongoDB"],
+    "github": "https://github.com/muharrir/portfolio-v2"
+  },
+  {
+    "id": 6,
+    "category": "mobile",
+    "title": "Airplane",
+    "description": "Built an apps that likes an Traveloka and Tiket.com. This apps are built for user who wants booking an airplane",
+    "tech": ["Flutter", "Firebase"],
+    "github": "https://github.com/muharrir/airplane"
+  }
+]
