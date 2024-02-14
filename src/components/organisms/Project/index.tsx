@@ -19,6 +19,31 @@ function Project() {
   const projectList = [
     {
       id: 1,
+      title: "Takaya Group",
+      tech: ["nextjs", "tailwindcss"],
+      description:
+        "Build a profile company website for Takaya Group using nextjs and tailwindcss, also manage the hosting for this page.",
+      href: "https://takayagroup.com",
+      github: "https://github.com/muharrir/luxury-rentcar-v1.1",
+      img: "project-takaya",
+      bgColor: "#AAC8A7",
+      buttonColor: "#53C966",
+    },
+    {
+      id: 2,
+      title: "Galleriku",
+      tech: ["nextjs", "tailwindcss"],
+      description:
+        "Build a portfolio for the client that contain a project shoot as a wedding photographer. This website are build with nextjs and tailwindcss, and also it is",
+      href: "https://storegg-v1.vercel.app/",
+      github: "https://github.com/muharrir/storegg",
+      img: "project-storegg",
+
+      bgColor: "#FF9B9B",
+      buttonColor: "#FF5656",
+    },
+    {
+      id: 3,
       title: "Luxury RentCar",
       tech: ["nextjs", "tailwindcss", "expressjs", "MySQL"],
       description:
@@ -26,30 +51,6 @@ function Project() {
       href: "https://github.com/muharrir/luxury-rentcar-v1.1",
       github: "https://github.com/muharrir/luxury-rentcar-v1.1",
       img: "project-luxury",
-      bgColor: "#AAC8A7",
-      buttonColor: "#53C966",
-    },
-    {
-      id: 2,
-      title: "LuxSpace",
-      tech: ["nextjs", "tailwindcss"],
-      description:
-        "A website that sell a furnitures all you need at your home. This website also responsive for your devices.",
-      href: "https://github.com/muharrir/luxury-rentcar-v1.1",
-      github: "https://github.com/muharrir/luxury-rentcar-v1.1",
-      img: "project-luxspace",
-      bgColor: "#FF9B9B",
-      buttonColor: "#FF5656",
-    },
-    {
-      id: 3,
-      title: "StoreGG",
-      tech: ["nextjs", "tailwindcss"],
-      description:
-        "This website provides various types of game vouchers that are cheap and reliable. Let's upgrade your account!",
-      href: "https://storegg-v1.vercel.app/",
-      github: "https://github.com/muharrir/storegg",
-      img: "project-storegg",
       bgColor: "#A1CCD1",
       buttonColor: "#567DE3",
     },
